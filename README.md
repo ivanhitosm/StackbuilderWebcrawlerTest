@@ -1,6 +1,6 @@
 # StackbuilderWebcrawlerTest
 
-Python web crawler using scraping techniques to extract the first 30 entries from https://news.ycombinator.com/ and then filter them
+Python web crawler using scraping techniques to extract the first 30 entries from <https://news.ycombinator.com/> and then filter them with tests
 
 ---
 
@@ -10,6 +10,7 @@ Python web crawler using scraping techniques to extract the first 30 entries fro
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Tests](#tests)
+
 ---
 
 ## Installation
@@ -24,8 +25,8 @@ Python web crawler using scraping techniques to extract the first 30 entries fro
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
-   cd <project_directory>
+   git clone https://github.com/ivanhitosm/StackbuilderWebcrawlerTest
+   cd StackbuilderWebcrawlerTest
 
 2. Install dependencies:
 
@@ -34,13 +35,8 @@ Python web crawler using scraping techniques to extract the first 30 entries fro
 
 ### Usage
 
-Explain how to use your project, including any configuration or environment setup.
-
-### Running the Application
-
 To run the Flask application:
 
-    
     python app.py
 
 ### Available Filters
@@ -52,7 +48,7 @@ To run the Flask application:
         Access via: http://localhost:5000/?filter=short_titles
 
 ### Project Structure
-    
+
     project-root/
     │
     ├── app.py               # Flask application setup and routes
@@ -72,7 +68,6 @@ Running Tests
 
 To run the tests using pytest:
 
-    
     pytest
 
 This will execute all the test files (test_crawler.py and test_filters.py) in the tests directory and display the test results.
