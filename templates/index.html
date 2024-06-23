@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hacker News Scraper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .filters {
+            margin-bottom: 10px;
+        }
+
+        .filters a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .filters a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hacker News Entries</h1>
+    <div class="filters">
+        <a href="/?filter=long_titles">Filter Long Titles</a>
+        <a href="/?filter=short_titles">Filter Short Titles</a>
+        <a href="/">Reset Filters</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Title</th>
+                <th>Points</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries %}
+            <tr>
+                <td>{{ entry.number }}</td>
+                <td>{{ entry.title }}</td>
+                <td>{{ entry.points }}</td>
+                <td>{{ entry.comments }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
