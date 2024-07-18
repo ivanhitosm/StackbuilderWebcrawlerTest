@@ -1,4 +1,4 @@
-# StackbuilderWebcrawlerTest
+# WebcrawlerTest
 
 Python web crawler using scraping techniques to extract the first 30 entries from <https://news.ycombinator.com/> and then filter them with tests
 
